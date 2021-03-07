@@ -1,7 +1,8 @@
+# simple-search
 
-<script src="../js/sidebar-list.js"></script>
+<p><a href="list-pages/bing.com">必应</a>  <a href="list-pages/www.google.com">谷歌</a>  <a href="list-pages/www.baidu.com">百度</a>  <a href="list-pages/en.wikipedia.org">维基</a>  <a href="menu">更多</a></p>
 
-<input id="searchInput" type="text"> <button onclick="startSearch()">百度搜索</button>
+<input id="searchInput" type="text"> <button onclick="startSearch()">Bing Search</button>
 
 <script>
     function startSearch(){
@@ -24,7 +25,7 @@
        searchEngine[15]="https://www.jianshu.com/search?q=";
        searchEngine[16]="https://segmentfault.com/search?q=";
        searchEngine[17]="https://search.gitee.com/?skin=rec&type=repository&q=";
-       var defaultSearchEngine=searchEngine[0];
+       var defaultSearchEngine=searchEngine[2];
        var searchValue = document.getElementById("searchInput").value;
        window.open(defaultSearchEngine+searchValue);
     }
